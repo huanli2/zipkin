@@ -5,7 +5,7 @@ Web requests are served by [Express](http://expressjs.com/) controllers, and tra
 # Running the example
 This example has two services: request-zipkin,frontend and backend. They both report trace data to zipkin. To setup the demo, you need to start frontend.js, backend.js and Zipkin. 
 
-* frontend: http://localhost:8081/, then call backend. client using rest + zipkin-instrumentation-cujojs-res
+* frontend: http://localhost:8081/, then call backend. client using rest + zipkin-instrumentation-cujojs-rest.
 * request-zipkin:http://localhost:8082, then call backend.client using request, folder it to send info to zipkin.
 * This continues the trace and calls the backend (http://localhost:9000/api) and show the result, which defaults to a formatted date.
 
