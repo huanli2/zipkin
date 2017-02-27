@@ -1,12 +1,8 @@
 /**
  * Created by lih on 2017/2/24.
  */
-const {recorder} = require('./recorder.js');
-const {Tracer} = require('zipkin');
 
-const CLSContext = require('zipkin-context-cls');
-const ctxImpl = new CLSContext('server');
-const tracer = new Tracer({ctxImpl, recorder});
+const tracer = require('./tracer');
 
 const express = require('express');
 const app = express();

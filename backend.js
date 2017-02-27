@@ -1,9 +1,5 @@
 // initialize tracer
-const {recorder} = require('./recorder.js');
-const {Tracer} = require('zipkin');
-const CLSContext = require('zipkin-context-cls');
-const ctxImpl = new CLSContext('zipkin');
-const tracer = new Tracer({ctxImpl, recorder});
+const tracer = require('./tracer');
 
 const express = require('express');
 const app = express();
