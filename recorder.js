@@ -6,7 +6,6 @@ const {BatchRecorder} = require('zipkin');
 
 // Send spans to Zipkin asynchronously over HTTP
 const zipkinBaseUrl = 'http://localhost:9411';
-//const zipkinBaseUrl = 'http://http://zipkin-qa.fenqi.im:9411';
 const endpoint=zipkinBaseUrl + "/api/v1/spans";
 const recorder = new BatchRecorder({
    logger: new HttpLogger({
